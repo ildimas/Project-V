@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/dropzone.min.js"></script>
+    <link rel="stylesheet" href="../css/dropzone.min.css" type="text/css" />
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+    <title>Сравниватель документов</title>
+      
+</head>
+<body>  
+    <div class="my_container">
+        <div class="my_inner-container">
+            <h1 class="main-font" id="myeel">Документальное Сравнение v2.0</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="main-font">Документ до:</h1>
+                    <SECTION>
+                        <DIV id="dropzone">
+                          <FORM class="dropzone needsclick" id="before-upload">
+                            <DIV class="dz-message needsclick">    
+                              Перетащите файлы или нажмите, чтобы добавить.
+                            </DIV>
+                           
+                          </FORM>
+                        </DIV>
+                      </SECTION>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="main-font">Документ после:</h1>
+                    <SECTION>
+                        <DIV id="dropzone">
+                          <FORM class="dropzone needsclick" id="after-upload">
+                            <DIV class="dz-message needsclick">    
+                              Перетащите файлы или нажмите, чтобы добавить.
+                            </DIV>
+                           
+                          </FORM>
+                        </DIV>
+                      </SECTION>
+                </div> 
+            </div>
+            <div class="row mb-2">
+                <div class="row mt-2">
+                    <div class="col-md-12 text-center">
+                        <button type="button" class="btn btn-primary" id="startprocesingbtn">Начать сравнение</button>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-md-12 text-center">
+                      <div id="download_btn_container">
+                          <button type="button" class="btn btn-primary" id="DownloadFileButton">Скачать ваш проверенный документ</button>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/renderer.js"></script>
+</html>

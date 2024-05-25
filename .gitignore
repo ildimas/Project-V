@@ -1,0 +1,11 @@
+node_modules
+envi
+FileCompare-linux-x64
+FileCompare-win32-x64
+build
+dist
+main.spec
+logs.txt
+__pycache__
+samples
+.git_like_diff_algo.py

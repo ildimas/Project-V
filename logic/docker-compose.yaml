@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: .
+    container_name: fast_api_backend
+    image: ildimas/file_compare_logic:latest
+    ports:
+    - "8000:8000"
+    environment:
+      - SLASH=/
+      - HOST=backend
+      - TZ=Europe/Moscow 
+      - CONTAINER=True
+  # nginx:
+  #   build:
+  #     context: ../nginx
+  #   ports:
+  #   - "8000:8000"
+  #   container_name: nginx
+  #   depends_on:
+  #     - backend
+    
