@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="../css/dropzone.min.css" type="text/css" />
     <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
-    <title>Сравниватель документов</title>
+    <title>Алгоритм Тарьяна</title>
       
 </head>
 <body>  
     <div class="my_container">
         <div class="my_inner-container">
-            <h1 class="main-font" id="myeel">Документальное Сравнение v2.0</h1>
+            <h1 class="main-font" id="myeel">Реализация алгоритма Тарьяна</h1>
             <div class="row">
-                <div class="col-md-6">
-                    <h1 class="main-font">Документ до:</h1>
+                <div class="col-md-12">
+                    <h1 class="main-font">Загрузите ваш csv файл:</h1>
                     <SECTION>
                         <DIV id="dropzone">
                           <FORM class="dropzone needsclick" id="before-upload">
@@ -30,31 +30,18 @@
                         </DIV>
                       </SECTION>
                 </div>
-                <div class="col-md-6">
-                    <h1 class="main-font">Документ после:</h1>
-                    <SECTION>
-                        <DIV id="dropzone">
-                          <FORM class="dropzone needsclick" id="after-upload">
-                            <DIV class="dz-message needsclick">    
-                              Перетащите файлы или нажмите, чтобы добавить.
-                            </DIV>
-                           
-                          </FORM>
-                        </DIV>
-                      </SECTION>
-                </div> 
             </div>
             <div class="row mb-2">
                 <div class="row mt-2">
                     <div class="col-md-12 text-center">
-                        <button type="button" class="btn btn-primary" id="startprocesingbtn">Начать сравнение</button>
+                        <button type="button" class="btn btn-primary" id="startprocesingbtn">Начать вычисление</button>
                     </div>
                 </div>
 
                 <div class="row mt-2">
                     <div class="col-md-12 text-center">
                       <div id="download_btn_container">
-                          <button type="button" class="btn btn-primary" id="DownloadFileButton">Скачать ваш проверенный документ</button>
+                          <button type="button" class="btn btn-primary" id="DownloadFileButton">Скачать полученный результат</button>
                       </div>
                 </div>
             </div>

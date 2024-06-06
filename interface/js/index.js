@@ -23,7 +23,6 @@ function createDropzoneConfig(keyValue) {
             this.on("removedfile", function(file) {
                 var formData = new FormData();
                 formData.append('filename', file.name); 
-                formData.append('key', keyValue); 
                 fetch(`http://${HOST}/delete`, {
                     method: 'POST',
                     body: formData
@@ -39,8 +38,7 @@ function createDropzoneConfig(keyValue) {
         }
     };
 }
-var myDropzone = new Dropzone("#before-upload", createDropzoneConfig("b"));
-var myDropzone2 = new Dropzone("#after-upload", createDropzoneConfig("a"));
+var myDropzone = new Dropzone("#before-upload", createDropzoneConfig());
 
 document.getElementById('startprocesingbtn').addEventListener('click', function() {
     var downloadButton = document.getElementById('DownloadFileButton');
